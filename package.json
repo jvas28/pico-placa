@@ -1,0 +1,22 @@
+{
+  "name": "picoplaca",
+  "version": "1.0.0",
+  "description": "Test for Stack Builders",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && mocha --require babel-core/register",
+    "build": "babel --presets es2015 -d dist/ src",
+    "start": "npm run build && node ./dist/index.js"
+  },
+  "author": "Julio Vasconez",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "moment": "^2.24.0"
+  }
+}
